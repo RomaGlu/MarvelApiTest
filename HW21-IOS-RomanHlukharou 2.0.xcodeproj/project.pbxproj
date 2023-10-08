@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E50E7762AD2DB6E0042DA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7752AD2DB6E0042DA72 /* AppDelegate.swift */; };
 		4E50E7782AD2DB6E0042DA72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7772AD2DB6E0042DA72 /* SceneDelegate.swift */; };
-		4E50E77A2AD2DB6E0042DA72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7792AD2DB6E0042DA72 /* ViewController.swift */; };
+		4E50E77A2AD2DB6E0042DA72 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7792AD2DB6E0042DA72 /* MainScene.swift */; };
 		4E50E77F2AD2DB700042DA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E50E77E2AD2DB700042DA72 /* Assets.xcassets */; };
 		4E50E7822AD2DB700042DA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E50E7802AD2DB700042DA72 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +18,7 @@
 		4E50E7722AD2DB6E0042DA72 /* HW21-IOS-RomanHlukharou 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW21-IOS-RomanHlukharou 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E50E7752AD2DB6E0042DA72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E50E7772AD2DB6E0042DA72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4E50E7792AD2DB6E0042DA72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E50E7792AD2DB6E0042DA72 /* MainScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
 		4E50E77E2AD2DB700042DA72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E50E7812AD2DB700042DA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E50E7832AD2DB700042DA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,10 +63,9 @@
 		4E50E7892AD2DC1C0042DA72 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				4E50E78E2AD2DC420042DA72 /* View */,
-				4E50E78D2AD2DC3B0042DA72 /* Model */,
+				4E50E7922AD2E0D30042DA72 /* DetailScreen */,
+				4E50E7912AD2E0C30042DA72 /* MainScreen */,
 				4E50E78B2AD2DC2A0042DA72 /* App */,
-				4E50E78C2AD2DC2F0042DA72 /* ViewController */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -93,7 +92,7 @@
 		4E50E78C2AD2DC2F0042DA72 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4E50E7792AD2DB6E0042DA72 /* ViewController.swift */,
+				4E50E7792AD2DB6E0042DA72 /* MainScene.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -118,6 +117,31 @@
 				4E50E7802AD2DB700042DA72 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4E50E7902AD2E0B80042DA72 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4E50E7912AD2E0C30042DA72 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4E50E7902AD2E0B80042DA72 /* Network */,
+				4E50E78E2AD2DC420042DA72 /* View */,
+				4E50E78D2AD2DC3B0042DA72 /* Model */,
+				4E50E78C2AD2DC2F0042DA72 /* ViewController */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		4E50E7922AD2E0D30042DA72 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E50E77A2AD2DB6E0042DA72 /* ViewController.swift in Sources */,
+				4E50E77A2AD2DB6E0042DA72 /* MainScene.swift in Sources */,
 				4E50E7762AD2DB6E0042DA72 /* AppDelegate.swift in Sources */,
 				4E50E7782AD2DB6E0042DA72 /* SceneDelegate.swift in Sources */,
 			);
