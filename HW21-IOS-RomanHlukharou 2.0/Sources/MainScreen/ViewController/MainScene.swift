@@ -9,10 +9,14 @@ import UIKit
 
 class MainScene: UIViewController {
 
+    let urlConstruct = URLConstructor()
+    let networkManager = NetworkManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .cyan
         // Do any additional setup after loading the view.
+        
     }
 
 

@@ -1,0 +1,6 @@
+module Pods_HW21_IOS_RomanHlukharou_2_0 {
+  umbrella header "Pods-HW21-IOS-RomanHlukharou 2.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

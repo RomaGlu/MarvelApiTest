@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A7806A9E93A70E683559E89 /* libPods-HW21-IOS-RomanHlukharou 2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD36EE2156BEA5AE729C093 /* libPods-HW21-IOS-RomanHlukharou 2.0.a */; };
 		4E50E7762AD2DB6E0042DA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7752AD2DB6E0042DA72 /* AppDelegate.swift */; };
 		4E50E7782AD2DB6E0042DA72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7772AD2DB6E0042DA72 /* SceneDelegate.swift */; };
 		4E50E77A2AD2DB6E0042DA72 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7792AD2DB6E0042DA72 /* MainScene.swift */; };
 		4E50E77F2AD2DB700042DA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E50E77E2AD2DB700042DA72 /* Assets.xcassets */; };
 		4E50E7822AD2DB700042DA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E50E7802AD2DB700042DA72 /* LaunchScreen.storyboard */; };
+		4E50E7942AD2E1470042DA72 /* URLConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7932AD2E1470042DA72 /* URLConstructor.swift */; };
+		4E50E7962AD408430042DA72 /* ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7952AD408430042DA72 /* ImageSize.swift */; };
+		4E50E7992AD409190042DA72 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7982AD409190042DA72 /* String+Ext.swift */; };
+		4E50E79B2AD4095E0042DA72 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E79A2AD4095E0042DA72 /* NetworkManager.swift */; };
+		4E50E79D2AD40B180042DA72 /* ComicsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E79C2AD40B180042DA72 /* ComicsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CE633E3D2F416A3B8D8ABFE /* Pods-HW21-IOS-RomanHlukharou 2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW21-IOS-RomanHlukharou 2.0.debug.xcconfig"; path = "Target Support Files/Pods-HW21-IOS-RomanHlukharou 2.0/Pods-HW21-IOS-RomanHlukharou 2.0.debug.xcconfig"; sourceTree = "<group>"; };
+		3DD36EE2156BEA5AE729C093 /* libPods-HW21-IOS-RomanHlukharou 2.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HW21-IOS-RomanHlukharou 2.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A13CA8D251014090E758B6 /* Pods-HW21-IOS-RomanHlukharou 2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW21-IOS-RomanHlukharou 2.0.release.xcconfig"; path = "Target Support Files/Pods-HW21-IOS-RomanHlukharou 2.0/Pods-HW21-IOS-RomanHlukharou 2.0.release.xcconfig"; sourceTree = "<group>"; };
 		4E50E7722AD2DB6E0042DA72 /* HW21-IOS-RomanHlukharou 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW21-IOS-RomanHlukharou 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E50E7752AD2DB6E0042DA72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E50E7772AD2DB6E0042DA72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +31,11 @@
 		4E50E77E2AD2DB700042DA72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E50E7812AD2DB700042DA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E50E7832AD2DB700042DA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E50E7932AD2E1470042DA72 /* URLConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstructor.swift; sourceTree = "<group>"; };
+		4E50E7952AD408430042DA72 /* ImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSize.swift; sourceTree = "<group>"; };
+		4E50E7982AD409190042DA72 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		4E50E79A2AD4095E0042DA72 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4E50E79C2AD40B180042DA72 /* ComicsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7806A9E93A70E683559E89 /* libPods-HW21-IOS-RomanHlukharou 2.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				4E50E7742AD2DB6E0042DA72 /* HW21-IOS-RomanHlukharou 2.0 */,
 				4E50E7732AD2DB6E0042DA72 /* Products */,
+				D7CAF2BEAB28415DC20F7C19 /* Pods */,
+				8687EBDF35B0EA3200E91B4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +80,7 @@
 		4E50E7892AD2DC1C0042DA72 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4E50E7972AD408F90042DA72 /* Extensions */,
 				4E50E7922AD2E0D30042DA72 /* DetailScreen */,
 				4E50E7912AD2E0C30042DA72 /* MainScreen */,
 				4E50E78B2AD2DC2A0042DA72 /* App */,
@@ -100,6 +118,7 @@
 		4E50E78D2AD2DC3B0042DA72 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4E50E79C2AD40B180042DA72 /* ComicsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,6 +141,9 @@
 		4E50E7902AD2E0B80042DA72 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4E50E7932AD2E1470042DA72 /* URLConstructor.swift */,
+				4E50E7952AD408430042DA72 /* ImageSize.swift */,
+				4E50E79A2AD4095E0042DA72 /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -144,6 +166,31 @@
 			path = DetailScreen;
 			sourceTree = "<group>";
 		};
+		4E50E7972AD408F90042DA72 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E50E7982AD409190042DA72 /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8687EBDF35B0EA3200E91B4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DD36EE2156BEA5AE729C093 /* libPods-HW21-IOS-RomanHlukharou 2.0.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7CAF2BEAB28415DC20F7C19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CE633E3D2F416A3B8D8ABFE /* Pods-HW21-IOS-RomanHlukharou 2.0.debug.xcconfig */,
+				44A13CA8D251014090E758B6 /* Pods-HW21-IOS-RomanHlukharou 2.0.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E50E7862AD2DB700042DA72 /* Build configuration list for PBXNativeTarget "HW21-IOS-RomanHlukharou 2.0" */;
 			buildPhases = (
+				BA7330619976A735FBE11B5C /* [CP] Check Pods Manifest.lock */,
 				4E50E76E2AD2DB6E0042DA72 /* Sources */,
 				4E50E76F2AD2DB6E0042DA72 /* Frameworks */,
 				4E50E7702AD2DB6E0042DA72 /* Resources */,
@@ -209,13 +257,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BA7330619976A735FBE11B5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HW21-IOS-RomanHlukharou 2.0-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E50E76E2AD2DB6E0042DA72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E50E7992AD409190042DA72 /* String+Ext.swift in Sources */,
 				4E50E77A2AD2DB6E0042DA72 /* MainScene.swift in Sources */,
 				4E50E7762AD2DB6E0042DA72 /* AppDelegate.swift in Sources */,
+				4E50E79D2AD40B180042DA72 /* ComicsModel.swift in Sources */,
+				4E50E79B2AD4095E0042DA72 /* NetworkManager.swift in Sources */,
+				4E50E7942AD2E1470042DA72 /* URLConstructor.swift in Sources */,
+				4E50E7962AD408430042DA72 /* ImageSize.swift in Sources */,
 				4E50E7782AD2DB6E0042DA72 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +433,7 @@
 		};
 		4E50E7872AD2DB700042DA72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CE633E3D2F416A3B8D8ABFE /* Pods-HW21-IOS-RomanHlukharou 2.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -386,6 +465,7 @@
 		};
 		4E50E7882AD2DB700042DA72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44A13CA8D251014090E758B6 /* Pods-HW21-IOS-RomanHlukharou 2.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
