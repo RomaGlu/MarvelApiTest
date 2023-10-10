@@ -5,11 +5,11 @@ struct DataMarvel: Decodable {
 
     struct Results: Decodable {
         let total: Int
-        let results: [Comic]
+        let results: [Comics]
     }
 }
 
-struct Comic: Decodable {
+struct Comics: Decodable {
     let title: String
     let issueNumber: Double?
     let description: String?

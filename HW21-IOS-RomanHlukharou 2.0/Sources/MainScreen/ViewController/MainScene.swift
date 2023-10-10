@@ -11,11 +11,15 @@ class MainScene: UIViewController {
 
     let urlConstruct = URLConstructor()
     let networkManager = NetworkManager()
+    let comicsView = ComicsView()
+    
+    override func loadView() {
+        view = comicsView
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .cyan
-        // Do any additional setup after loading the view.
+        
         
     }
 

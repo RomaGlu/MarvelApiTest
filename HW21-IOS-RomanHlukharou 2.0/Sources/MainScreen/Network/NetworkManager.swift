@@ -5,7 +5,7 @@ class NetworkManager {
     static let shared = NetworkManager()
     let urlConstructor = URLConstructor()
     
-    func fetchData(from url: String, handler: @escaping (Result<[Comic], AFError>) -> Void) {
+    func fetchData(from url: String, handler: @escaping (Result<[Comics], AFError>) -> Void) {
         let url = urlConstructor.getMasterUrl(name: nil, value: nil)
         AF.request(url).responseDecodable(of: DataMarvel.self) { data in
             guard let dataValue = data.value else {

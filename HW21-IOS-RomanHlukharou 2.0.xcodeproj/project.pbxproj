@@ -18,6 +18,10 @@
 		4E50E7992AD409190042DA72 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7982AD409190042DA72 /* String+Ext.swift */; };
 		4E50E79B2AD4095E0042DA72 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E79A2AD4095E0042DA72 /* NetworkManager.swift */; };
 		4E50E79D2AD40B180042DA72 /* ComicsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E79C2AD40B180042DA72 /* ComicsModel.swift */; };
+		4E50E79F2AD55C140042DA72 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E79E2AD55C140042DA72 /* TableViewCell.swift */; };
+		4E50E7A22AD55D8A0042DA72 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4E50E7A12AD55D8A0042DA72 /* SnapKit */; };
+		4E50E7A42AD563B00042DA72 /* ComicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7A32AD563B00042DA72 /* ComicsView.swift */; };
+		4E50E7A62AD58A8F0042DA72 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7A52AD58A8F0042DA72 /* UIView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,9 @@
 		4E50E7982AD409190042DA72 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		4E50E79A2AD4095E0042DA72 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		4E50E79C2AD40B180042DA72 /* ComicsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsModel.swift; sourceTree = "<group>"; };
+		4E50E79E2AD55C140042DA72 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4E50E7A32AD563B00042DA72 /* ComicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsView.swift; sourceTree = "<group>"; };
+		4E50E7A52AD58A8F0042DA72 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A7806A9E93A70E683559E89 /* libPods-HW21-IOS-RomanHlukharou 2.0.a in Frameworks */,
+				4E50E7A22AD55D8A0042DA72 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +134,8 @@
 		4E50E78E2AD2DC420042DA72 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4E50E79E2AD55C140042DA72 /* TableViewCell.swift */,
+				4E50E7A32AD563B00042DA72 /* ComicsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				4E50E7982AD409190042DA72 /* String+Ext.swift */,
+				4E50E7A52AD58A8F0042DA72 /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -208,6 +219,9 @@
 			dependencies = (
 			);
 			name = "HW21-IOS-RomanHlukharou 2.0";
+			packageProductDependencies = (
+				4E50E7A12AD55D8A0042DA72 /* SnapKit */,
+			);
 			productName = "HW21-IOS-RomanHlukharou 2.0";
 			productReference = 4E50E7722AD2DB6E0042DA72 /* HW21-IOS-RomanHlukharou 2.0.app */;
 			productType = "com.apple.product-type.application";
@@ -236,6 +250,9 @@
 				Base,
 			);
 			mainGroup = 4E50E7692AD2DB6E0042DA72;
+			packageReferences = (
+				4E50E7A02AD55D8A0042DA72 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 4E50E7732AD2DB6E0042DA72 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,13 +305,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E50E7992AD409190042DA72 /* String+Ext.swift in Sources */,
+				4E50E7A62AD58A8F0042DA72 /* UIView+Ext.swift in Sources */,
 				4E50E77A2AD2DB6E0042DA72 /* MainScene.swift in Sources */,
 				4E50E7762AD2DB6E0042DA72 /* AppDelegate.swift in Sources */,
+				4E50E7A42AD563B00042DA72 /* ComicsView.swift in Sources */,
 				4E50E79D2AD40B180042DA72 /* ComicsModel.swift in Sources */,
 				4E50E79B2AD4095E0042DA72 /* NetworkManager.swift in Sources */,
 				4E50E7942AD2E1470042DA72 /* URLConstructor.swift in Sources */,
 				4E50E7962AD408430042DA72 /* ImageSize.swift in Sources */,
 				4E50E7782AD2DB6E0042DA72 /* SceneDelegate.swift in Sources */,
+				4E50E79F2AD55C140042DA72 /* TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +537,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4E50E7A02AD55D8A0042DA72 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E50E7A12AD55D8A0042DA72 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E50E7A02AD55D8A0042DA72 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4E50E76A2AD2DB6E0042DA72 /* Project object */;
 }
