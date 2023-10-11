@@ -10,7 +10,7 @@
 		4A7806A9E93A70E683559E89 /* libPods-HW21-IOS-RomanHlukharou 2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD36EE2156BEA5AE729C093 /* libPods-HW21-IOS-RomanHlukharou 2.0.a */; };
 		4E50E7762AD2DB6E0042DA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7752AD2DB6E0042DA72 /* AppDelegate.swift */; };
 		4E50E7782AD2DB6E0042DA72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7772AD2DB6E0042DA72 /* SceneDelegate.swift */; };
-		4E50E77A2AD2DB6E0042DA72 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7792AD2DB6E0042DA72 /* MainScene.swift */; };
+		4E50E77A2AD2DB6E0042DA72 /* MainSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7792AD2DB6E0042DA72 /* MainSceneViewController.swift */; };
 		4E50E77F2AD2DB700042DA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E50E77E2AD2DB700042DA72 /* Assets.xcassets */; };
 		4E50E7822AD2DB700042DA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E50E7802AD2DB700042DA72 /* LaunchScreen.storyboard */; };
 		4E50E7942AD2E1470042DA72 /* URLConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7932AD2E1470042DA72 /* URLConstructor.swift */; };
@@ -22,6 +22,8 @@
 		4E50E7A22AD55D8A0042DA72 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4E50E7A12AD55D8A0042DA72 /* SnapKit */; };
 		4E50E7A42AD563B00042DA72 /* ComicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7A32AD563B00042DA72 /* ComicsView.swift */; };
 		4E50E7A62AD58A8F0042DA72 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7A52AD58A8F0042DA72 /* UIView+Ext.swift */; };
+		4E50E7A82AD5A91B0042DA72 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7A72AD5A91B0042DA72 /* DetailViewController.swift */; };
+		4E50E7AC2AD5A9590042DA72 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7AB2AD5A9580042DA72 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +33,7 @@
 		4E50E7722AD2DB6E0042DA72 /* HW21-IOS-RomanHlukharou 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW21-IOS-RomanHlukharou 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E50E7752AD2DB6E0042DA72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E50E7772AD2DB6E0042DA72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4E50E7792AD2DB6E0042DA72 /* MainScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
+		4E50E7792AD2DB6E0042DA72 /* MainSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewController.swift; sourceTree = "<group>"; };
 		4E50E77E2AD2DB700042DA72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E50E7812AD2DB700042DA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E50E7832AD2DB700042DA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +45,8 @@
 		4E50E79E2AD55C140042DA72 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4E50E7A32AD563B00042DA72 /* ComicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsView.swift; sourceTree = "<group>"; };
 		4E50E7A52AD58A8F0042DA72 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		4E50E7A72AD5A91B0042DA72 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4E50E7AB2AD5A9580042DA72 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +122,7 @@
 		4E50E78C2AD2DC2F0042DA72 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4E50E7792AD2DB6E0042DA72 /* MainScene.swift */,
+				4E50E7792AD2DB6E0042DA72 /* MainSceneViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -172,6 +176,8 @@
 		4E50E7922AD2E0D30042DA72 /* DetailScreen */ = {
 			isa = PBXGroup;
 			children = (
+				4E50E7AA2AD5A9460042DA72 /* ViewController */,
+				4E50E7A92AD5A9390042DA72 /* View */,
 			);
 			path = DetailScreen;
 			sourceTree = "<group>";
@@ -183,6 +189,22 @@
 				4E50E7A52AD58A8F0042DA72 /* UIView+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4E50E7A92AD5A9390042DA72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E50E7AB2AD5A9580042DA72 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E50E7AA2AD5A9460042DA72 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E50E7A72AD5A91B0042DA72 /* DetailViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		8687EBDF35B0EA3200E91B4E /* Frameworks */ = {
@@ -306,12 +328,14 @@
 			files = (
 				4E50E7992AD409190042DA72 /* String+Ext.swift in Sources */,
 				4E50E7A62AD58A8F0042DA72 /* UIView+Ext.swift in Sources */,
-				4E50E77A2AD2DB6E0042DA72 /* MainScene.swift in Sources */,
+				4E50E77A2AD2DB6E0042DA72 /* MainSceneViewController.swift in Sources */,
 				4E50E7762AD2DB6E0042DA72 /* AppDelegate.swift in Sources */,
 				4E50E7A42AD563B00042DA72 /* ComicsView.swift in Sources */,
 				4E50E79D2AD40B180042DA72 /* ComicsModel.swift in Sources */,
 				4E50E79B2AD4095E0042DA72 /* NetworkManager.swift in Sources */,
+				4E50E7AC2AD5A9590042DA72 /* DetailView.swift in Sources */,
 				4E50E7942AD2E1470042DA72 /* URLConstructor.swift in Sources */,
+				4E50E7A82AD5A91B0042DA72 /* DetailViewController.swift in Sources */,
 				4E50E7962AD408430042DA72 /* ImageSize.swift in Sources */,
 				4E50E7782AD2DB6E0042DA72 /* SceneDelegate.swift in Sources */,
 				4E50E79F2AD55C140042DA72 /* TableViewCell.swift in Sources */,

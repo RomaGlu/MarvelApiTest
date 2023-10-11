@@ -23,6 +23,7 @@ final class TableViewCell: UITableViewCell {
 
         self.accessoryType = .disclosureIndicator
         setupHierarchy()
+        setupLayout()
     }
     
     required init?(coder: NSCoder) {
@@ -36,22 +37,22 @@ final class TableViewCell: UITableViewCell {
     
     private func setupLayout() {
         comicsImage.snp.makeConstraints { make in
-            make.left.equalTo(contentView.snp.left).offset(5)
-            make.top.equalTo(contentView.snp.top).offset(5)
+            make.left.equalTo(contentView.snp.left).offset(15)
+            make.top.equalTo(contentView.snp.top)
             make.width.equalTo(50)
-            make.height.equalTo(50)
+            make.height.equalTo(self)
         }
         
         titleLabel.snp.makeConstraints { make in
             make.left.equalTo(comicsImage.snp.right).offset(10)
-            make.centerX.equalTo(comicsImage.snp.centerX)
+            make.centerY.equalTo(comicsImage.snp.centerY)
             make.width.equalTo(250)
         }
     }
     
     func configureView(with comics: Comics) {
         if let imageUrlString = urlConstructor.getImageUrl(path: comics.thumbnail?.path,
-                                                           size: .small,
+                                                           size: .portrait,
                                                            extention: comics.thumbnail?.imageExtension) {
             NetworkManager().getImages(from: imageUrlString) { result in
                 switch result {
@@ -71,3 +72,4 @@ final class TableViewCell: UITableViewCell {
         titleLabel.text = "\(comics.title)"
     }
 }
+
