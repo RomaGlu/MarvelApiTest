@@ -9,11 +9,15 @@ import UIKit
 
 class MainSceneViewController: UIViewController {
 
+    //    MARK: - Properies
+    
     let urlConstructor = URLConstructor()
     let networkManager = NetworkManager()
     let comicsView = ComicsView()
     var timer: Timer?
     var comics: [Comics] = []
+    
+    //    MARK: - Lifecycle
     
     override func loadView() {
         super.loadView()
@@ -22,18 +26,18 @@ class MainSceneViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         fetchComics(from: urlConstructor.getMasterUrl(name: nil, value: nil))
         setupView()
         setupSearchBar()
         setupTableView()
     }
     
+    //    MARK: - Layout
+    
     private func setupView() {
         view.backgroundColor = .systemBackground
         navigationItem.title = "Marvel Comics"
         navigationController?.navigationBar.prefersLargeTitles = true
-        
     }
     
     private func setupTableView() {
@@ -49,6 +53,8 @@ class MainSceneViewController: UIViewController {
         navigationItem.searchController = searchController
     }
 
+    //    MARK: - Alert
+    
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"),
@@ -57,6 +63,8 @@ class MainSceneViewController: UIViewController {
         }))
         self.present(alert, animated: true, completion: nil)
     }
+    
+    //    MARK: - Fetch function
 
     private func fetchComics(from url: String) {
         networkManager.fetchData(from: url) { (result) in
@@ -79,6 +87,8 @@ class MainSceneViewController: UIViewController {
 }
 
 extension MainSceneViewController: UISearchBarDelegate {
+    
+    //    MARK: - SearchBar
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard !searchText.isEmpty else { return }

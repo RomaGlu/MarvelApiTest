@@ -3,7 +3,11 @@ import SnapKit
 
 final class TableViewCell: UITableViewCell {
     
+    //    MARK: - Properties
+    
     let urlConstructor = URLConstructor()
+    
+    //    MARK: - Outlets
     
     private lazy var comicsImage: UIImageView = {
        let imageView = UIImageView()
@@ -18,9 +22,10 @@ final class TableViewCell: UITableViewCell {
         return label
     }()
     
+    //    MARK: - Initializators
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: "cell")
-
         self.accessoryType = .disclosureIndicator
         setupHierarchy()
         setupLayout()
@@ -29,6 +34,8 @@ final class TableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    //    MARK: - Layout
     
     private func setupHierarchy() {
         contentView.addSubview(comicsImage)
@@ -49,6 +56,8 @@ final class TableViewCell: UITableViewCell {
             make.width.equalTo(250)
         }
     }
+    
+    //    MARK: - View configuration
     
     func configureView(with comics: Comics) {
         if let imageUrlString = urlConstructor.getImageUrl(path: comics.thumbnail?.path,

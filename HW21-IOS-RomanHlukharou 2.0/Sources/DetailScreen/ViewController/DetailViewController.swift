@@ -2,8 +2,13 @@ import UIKit
 import SnapKit
 
 class DetailViewController: UIViewController {
+    
+//    MARK: - Properties
+    
     let urlConstructor = URLConstructor()
     let detailView = DetailView()
+    
+    //    MARK: - Lifecycle
     
     override func loadView() {
         super.loadView()
@@ -15,10 +20,14 @@ class DetailViewController: UIViewController {
         setupView()
     }
     
+    //    MARK: - Layout
+    
     private func setupView() {
         navigationItem.title = "Comics details"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
+    
+    //    MARK: - View configuration
     
     func configureView(_ comics: Comics) {
         if let imageUrlString = urlConstructor.getImageUrl(path: comics.thumbnail?.path,
@@ -54,6 +63,8 @@ class DetailViewController: UIViewController {
 }
 
 extension UIView {
+    
+//    добавление блюр эффекта для бэкграунда
     func addBlurredBackground(style: UIBlurEffect.Style) {
         let blurEffect = UIBlurEffect(style: style)
         let blurView = UIVisualEffectView(effect: blurEffect)

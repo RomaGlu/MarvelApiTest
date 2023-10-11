@@ -3,7 +3,11 @@ import SnapKit
 
 class DetailView: UIView {
     
+    //    MARK: - Properties
+    
     let urlConst = URLConstructor()
+    
+    //    MARK: - Outlets
     
     lazy var comicsImage: UIImageView = {
        let imageView = UIImageView()
@@ -28,6 +32,8 @@ class DetailView: UIView {
         return label
     }()
     
+    //    MARK: - Initializators
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .systemBackground
@@ -38,6 +44,8 @@ class DetailView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    //    MARK: - Layout
     
     private func setupHierarchy() {
         addSubview(comicsImage)
