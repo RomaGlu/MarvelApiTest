@@ -20,6 +20,8 @@ class DetailView: UIView {
        let label = UILabel()
         label.numberOfLines = 0
         label.textAlignment = .center
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.75
         label.font = UIFont.systemFont(ofSize: 24)
         return label
     }()

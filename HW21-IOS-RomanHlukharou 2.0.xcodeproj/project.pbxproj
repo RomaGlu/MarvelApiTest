@@ -21,7 +21,6 @@
 		4E50E79F2AD55C140042DA72 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E79E2AD55C140042DA72 /* TableViewCell.swift */; };
 		4E50E7A22AD55D8A0042DA72 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4E50E7A12AD55D8A0042DA72 /* SnapKit */; };
 		4E50E7A42AD563B00042DA72 /* ComicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7A32AD563B00042DA72 /* ComicsView.swift */; };
-		4E50E7A62AD58A8F0042DA72 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7A52AD58A8F0042DA72 /* UIView+Ext.swift */; };
 		4E50E7A82AD5A91B0042DA72 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7A72AD5A91B0042DA72 /* DetailViewController.swift */; };
 		4E50E7AC2AD5A9590042DA72 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50E7AB2AD5A9580042DA72 /* DetailView.swift */; };
 /* End PBXBuildFile section */
@@ -44,7 +43,6 @@
 		4E50E79C2AD40B180042DA72 /* ComicsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsModel.swift; sourceTree = "<group>"; };
 		4E50E79E2AD55C140042DA72 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4E50E7A32AD563B00042DA72 /* ComicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsView.swift; sourceTree = "<group>"; };
-		4E50E7A52AD58A8F0042DA72 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		4E50E7A72AD5A91B0042DA72 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4E50E7AB2AD5A9580042DA72 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				4E50E7982AD409190042DA72 /* String+Ext.swift */,
-				4E50E7A52AD58A8F0042DA72 /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -327,7 +324,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E50E7992AD409190042DA72 /* String+Ext.swift in Sources */,
-				4E50E7A62AD58A8F0042DA72 /* UIView+Ext.swift in Sources */,
 				4E50E77A2AD2DB6E0042DA72 /* MainSceneViewController.swift in Sources */,
 				4E50E7762AD2DB6E0042DA72 /* AppDelegate.swift in Sources */,
 				4E50E7A42AD563B00042DA72 /* ComicsView.swift in Sources */,
